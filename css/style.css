@@ -1,0 +1,265 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: linear-gradient(243.43deg, rgba(126, 90, 255, 0.83), rgb(60, 127, 212)), url("/img/tu-tram-pham-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 16px;
+}
+
+.nav svg {
+  margin-bottom: 36px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+li a {
+  font: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading h1 {
+  margin-bottom: 36px;
+}
+
+.heading svg {
+  margin-top: 70px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+  border-radius: none;
+  cursor: pointer;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+a .icon {
+  width: 40px;
+  height: 40px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  size: 44px;
+  line-height: 1.2;
+  color: #2C4058;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2C4058;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.3em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 100px;
+  border: 1px solid #2C4058;
+}
+
+/*# sourceMappingURL=style.css.map */
