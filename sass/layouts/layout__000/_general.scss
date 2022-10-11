@@ -46,10 +46,11 @@ a .icon {
 h3 {
     font-family: $fontMontserrat;
     font-weight: 700;
-    size: 44px;
+    font-size: 40px;
     line-height: 1.2;
     color: $darkBlueColor;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 p {
@@ -58,6 +59,7 @@ p {
     font-size: 18px;
     line-height: 1.6;
     color: $darkBlueColor;
+
 }
 
 h1 {
@@ -72,7 +74,6 @@ h1 {
 
 h4 {
     font-family: $fontMontserrat;
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.3em;
@@ -84,4 +85,43 @@ hr {
     //   color: $darkBlueColor;
     width: 100px;
     border: 1px solid $darkBlueColor;
+    margin-bottom: 30px;
+}
+
+h5 {
+    font-family: $fontMontserrat;
+    font-size: 22px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $darkBlueColor;
+}
+
+i {
+    color: $darkBlueColor;
+}
+
+button {
+    border: 1px solid $darkBlueColor;
+    background-color: $whiteColor;
+    font-family: $fontMontserrat;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    width: 190px;
+    height: 50px;
+}
+
+h6 {
+    font-family: $fontMontserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $darkBlueColor;
+    text-transform: uppercase;
+}
+
+span {
+    font-family: $fontMontserrat;
+    line-height: 1.2;
+    color: $lightBlueColor;
 }
