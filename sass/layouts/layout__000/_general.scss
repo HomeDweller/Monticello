@@ -98,6 +98,7 @@ h5 {
 
 i {
     color: $darkBlueColor;
+    margin-left: 10px;
 }
 
 button {
@@ -124,4 +125,17 @@ span {
     font-family: $fontMontserrat;
     line-height: 1.2;
     color: $lightBlueColor;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid $darkBlueColor;
+    font-family: $fontMontserrat;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.icon:hover {
+    height: 60px;
+    width: 60px;
 }

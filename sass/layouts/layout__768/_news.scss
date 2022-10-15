@@ -1,0 +1,18 @@
+.article {
+    background-color: $whiteColor;
+    width: 30vw;
+
+    img {
+        width: inherit;
+    }
+
+    h6 {
+        padding: 12px 0;
+    }
+}
+
+.articles {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}

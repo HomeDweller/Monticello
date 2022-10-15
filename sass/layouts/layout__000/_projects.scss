@@ -45,7 +45,7 @@
         width: 200px;
         align-self: flex-end;
         position: absolute;
-        left: 100px;
+        left: 11vw;
 
     }
 
@@ -62,8 +62,8 @@
 
     img {
         align-self: flex-start;
-        left: 0;
-        right: 100px;
+        left: initial;
+        right: 11vw;
     }
 
     .rectangle {

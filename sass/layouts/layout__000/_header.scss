@@ -1,9 +1,6 @@
 .header {
-    min-height: 100vh;
-    background-image: linear-gradient(243.43deg, $purpleColor, $blueColor), url("/img/tu-tram-pham-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    position: absolute;
+    background: transparent;
     padding: 16px;
 }
 
@@ -11,25 +8,66 @@
     margin-bottom: 36px;
 }
 
+
+li::marker {
+    width: 9px;
+    height: 9px;
+    border: 1px solid $whiteColor;
+}
+
 .links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 36px;
+
+    a::before {
+        content: '';
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border: 1px solid $whiteColor;
+        border-radius: 4.5px;
+        margin-right: 14px;
+    }
+
+    a:active::before {
+
+        background-color: $whiteColor;
+
+    }
 }
 
 li a {
     font: $fontSourceSansPro;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.2;
     color: $whiteColor;
     text-transform: uppercase;
+    margin-right: 30px;
 
 }
+
+
 
 .social {
     display: flex;
     justify-content: space-between;
     margin-bottom: 36px;
+
+    a {
+        height: 40px;
+    }
+}
+
+.mask {
+    min-height: 89vh;
+    background-image: linear-gradient(243.43deg, $purpleColor, $blueColor), url("/img/tu-tram-pham-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 41vh 16px 16px;
 }
 
 .heading {

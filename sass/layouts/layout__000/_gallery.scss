@@ -1,9 +1,21 @@
 .gallery {
-    padding: 0 20px;
+    padding: 0 20px 40px;
+
+
+    button {
+        margin: 0 14vw;
+    }
 }
 
 .container {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     img {
-        width: -webkit-fill-available;
+        width: 285px;
+        height: 214px;
+        padding-bottom: 10px;
     }
 }

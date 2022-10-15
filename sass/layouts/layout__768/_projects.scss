@@ -1,0 +1,29 @@
+.project1 {
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+.project1,
+.project2 {
+    flex-direction: row;
+
+    button {
+        margin-bottom: 40px;
+    }
+}
+
+.project2 {
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+
+.project2 .image {
+
+    align-self: baseline;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}

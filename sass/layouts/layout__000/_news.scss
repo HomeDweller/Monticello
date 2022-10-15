@@ -1,9 +1,9 @@
 .news {
     min-height: 100vh;
-    background: linear-gradient(243.43deg, $cyanColor, $blueColor);
+    background: url("/img/city-2.png"), linear-gradient(243.43deg, $cyanColor, $blueColor);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+
+    background-position: bottom center;
     padding: 60px 3vw;
 
 }
@@ -22,10 +22,8 @@
 
 .article {
     background-color: $whiteColor;
+    width: inherit;
 
-    img {
-        width: -webkit-fill-available;
-    }
 
     h6 {
         padding: 12px 0;

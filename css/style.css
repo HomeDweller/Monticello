@@ -130,11 +130,8 @@ table {
 }
 
 .header {
-  min-height: 100vh;
-  background-image: linear-gradient(243.43deg, rgba(126, 90, 255, 0.83), rgb(60, 127, 212)), url("/img/tu-tram-pham-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  position: absolute;
+  background: transparent;
   padding: 16px;
 }
 
@@ -142,24 +139,57 @@ table {
   margin-bottom: 36px;
 }
 
+li::marker {
+  width: 9px;
+  height: 9px;
+  border: 1px solid #fff;
+}
+
 .links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 36px;
+}
+.links a::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #fff;
+  border-radius: 4.5px;
+  margin-right: 14px;
+}
+.links a:active::before {
+  background-color: #fff;
 }
 
 li a {
   font: "Source Sans Pro", sans-serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
   color: #fff;
   text-transform: uppercase;
+  margin-right: 30px;
 }
 
 .social {
   display: flex;
   justify-content: space-between;
   margin-bottom: 36px;
+}
+.social a {
+  height: 40px;
+}
+
+.mask {
+  min-height: 89vh;
+  background-image: linear-gradient(243.43deg, rgba(126, 90, 255, 0.83), rgb(60, 127, 212)), url("/img/tu-tram-pham-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 41vh 16px 16px;
 }
 
 .heading {
@@ -220,7 +250,7 @@ li a {
   width: 200px;
   align-self: flex-end;
   position: absolute;
-  left: 100px;
+  left: 11vw;
 }
 .image .rectangle {
   height: 190px;
@@ -234,8 +264,8 @@ li a {
 }
 .project2 .image img {
   align-self: flex-start;
-  left: 0;
-  right: 100px;
+  left: initial;
+  right: 11vw;
 }
 .project2 .image .rectangle {
   align-self: flex-end;
@@ -248,10 +278,9 @@ li a {
 
 .news {
   min-height: 100vh;
-  background: linear-gradient(243.43deg, rgb(36, 204, 250), rgb(60, 127, 212));
+  background: url("/img/city-2.png"), linear-gradient(243.43deg, rgb(36, 204, 250), rgb(60, 127, 212));
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
   padding: 60px 3vw;
 }
 
@@ -267,9 +296,7 @@ li a {
 
 .article {
   background-color: #fff;
-}
-.article img {
-  width: -webkit-fill-available;
+  width: inherit;
 }
 .article h6 {
   padding: 12px 0;
@@ -297,15 +324,29 @@ li a {
 }
 
 .gallery {
-  padding: 0 20px;
+  padding: 0 20px 40px;
+}
+.gallery button {
+  margin: 0 14vw;
 }
 
+.container {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .container img {
-  width: -webkit-fill-available;
+  width: 285px;
+  height: 214px;
+  padding-bottom: 10px;
 }
 
 .contact {
   padding: 0 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .contact span {
   color: #000;
@@ -315,15 +356,65 @@ li a {
   color: rgba(126, 90, 255, 0.83);
 }
 
-input {
-  border: none;
-  border-bottom: 1px solid #2C4058;
+.map {
+  min-height: 700px;
 }
 
-input::placeholder {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+form {
+  position: absolute;
+  background: url("/img/city-1.png"), #fff;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-width: 48vw;
+  margin-top: -72vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data li {
+  padding-bottom: 20px;
+}
+
+input {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input input:focus {
+  outline: 0;
+}
+
+.inputs {
+  padding-bottom: 68px;
+}
+
+footer {
+  background-image: linear-gradient(243.43deg, rgba(126, 90, 255, 0.83), rgb(60, 127, 212)), url("/img/scott-webb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 9vh 5vw;
+}
+footer span {
+  color: #fff;
+}
+footer .social {
+  margin: 0;
+}
+
+.credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.credit img {
+  margin-bottom: 40px;
 }
 
 .visually-hidden {
@@ -424,6 +515,7 @@ h5 {
 
 i {
   color: #2C4058;
+  margin-left: 10px;
 }
 
 button {
@@ -450,6 +542,167 @@ span {
   font-family: "Montserrat", sans-serif;
   line-height: 1.2;
   color: rgba(85, 183, 255, 0.83);
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #2C4058;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.icon:hover {
+  height: 60px;
+  width: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .article {
+    background-color: #fff;
+    width: 30vw;
+  }
+  .article img {
+    width: inherit;
+  }
+  .article h6 {
+    padding: 12px 0;
+  }
+  .articles {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    justify-content: space-around;
+  }
+  .contact {
+    padding: 0;
+  }
+  form {
+    margin-top: -52vh;
+    width: 79vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: initial;
+  }
+  form .title {
+    width: 100%;
+  }
+  .submit {
+    align-self: end;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .project1 {
+    margin-bottom: 60px;
+    align-items: flex-start;
+  }
+  .project1,
+.project2 {
+    flex-direction: row;
+  }
+  .project1 button,
+.project2 button {
+    margin-bottom: 40px;
+  }
+  .project2 {
+    align-items: flex-end;
+    flex-direction: row-reverse;
+  }
+  .project2 .image {
+    align-self: baseline;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 9vh 5vw;
+  }
+  .social {
+    margin: 0;
+  }
+  .social a:not(:last-child) {
+    margin-right: 20px;
+  }
+  .credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .credit img {
+    margin-bottom: 40px;
+  }
+  .nav {
+    align-items: center;
+    display: flex;
+  }
+  .heading a {
+    margin-top: 28vh;
+  }
+  .links {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .news {
+    min-height: 74vh;
+  }
+  .articles {
+    margin-top: 4vh;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    justify-content: space-around;
+  }
+  form {
+    margin-top: -38vh;
+  }
+  .image {
+    height: 360px;
+  }
+  .image .rectangle {
+    height: 330px;
+    width: 410px;
+  }
+  .image img {
+    height: 330px;
+    width: 410px;
+    left: 6vw;
+  }
+  .project2 .image img {
+    right: 6vw;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nav {
+    align-items: center;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  form {
+    margin-top: -30vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

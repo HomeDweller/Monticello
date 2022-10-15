@@ -1,0 +1,25 @@
+.contact {
+    padding: 0;
+}
+
+form {
+    margin-top: -52vh;
+    width: 79vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: initial;
+
+    .title {
+        width: 100%;
+    }
+}
+
+.submit {
+    align-self: end;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}

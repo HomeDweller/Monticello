@@ -1,0 +1,18 @@
+.image {
+    height: 360px;
+
+    .rectangle {
+        height: 330px;
+        width: 410px
+    }
+
+    img {
+        height: 330px;
+        width: 410px;
+        left: 6vw;
+    }
+}
+
+.project2 .image img {
+    right: 6vw;
+}
