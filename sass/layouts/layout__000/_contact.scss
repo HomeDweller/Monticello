@@ -30,14 +30,23 @@ form {
     align-items: center;
 }
 
+.form.valid {
+    display: none;
+}
+
 .data {
     li {
         padding-bottom: 20px;
     }
 }
 
-input {
+.input-control {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 32px;
+}
+
+input {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,4 +58,18 @@ input {
 
 .inputs {
     padding-bottom: 68px;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
 }
